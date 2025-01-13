@@ -1,0 +1,26 @@
+{
+  "name": "cognitio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build --gulpfile gulpfile.mjs",
+    "start": "gulp --gulpfile gulpfile.mjs",
+    "dev": "gulp watch --gulpfile gulpfile.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "gulp": "4.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-sass": "^6.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "sass": "^1.82.0"
+  }
+}

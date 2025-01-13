@@ -1,0 +1,54 @@
+@use 'variables' as vars;
+@use 'header';
+@use 'hero';
+@use 'menu';
+@use 'mixins' as mixins;
+
+
+* {
+    font-family: "Karla", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.text{
+    @include mixins.text();
+}
+
+.text--small{
+    @include mixins.text-small();
+}
+.text--big{
+    @include mixins.text-big();
+}
+
+
+.title{
+    @include mixins.title();
+}
+
+.title--small{
+    @include mixins.title-small();
+}
+
+.title--big{
+    @include mixins.title-big();
+}
+
+.link{
+    @include mixins.link();
+}
+
+.image-text-section{
+    @include mixins.image-text-section();
+}
+
+.button{
+    @include mixins.button();
+}
+
+.menu{
+    @include mixins.menu();
+}

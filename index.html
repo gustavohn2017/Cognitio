@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognitio</title>
+    <link rel="stylesheet" href="./dist/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Karla:ital,wght@0,200..800;1,200..800&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/cognitinho.png" alt="Cognitio">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#" class="button button--secondary">Conheça nossos planos!</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--dark">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="hero">
+            <div class="hero__content">
+                <h1 class="hero__content__branding">
+
+                </h1>
+                <h3 class="title--small">
+                    <p>Desenvolva suas habilidades e alcance seus objetivos!</p>
+                </h3>
+                <p>
+                    <a href="#" class="link-text">Saiba mais</a>
+                    <br>
+                    <span class="text">
+                        <a href="#" class="link-text">Clique aqui para acessar o conteúdo</a>
+                    </span>
+                </p>
+                <ul class="hero__content__combos">
+                    <li class="hero__content__combos__combo">
+                        <button class="button">Agende uma consulta!</button>
+                    </li>
+                    <li class="hero__content__combos__combo">
+                        <img src="./dist/images/logos/disney_star_plus_starzplay.png">
+                        <button class="button button--secondary">Assine Agora</button>
+                        <span class="text">55,90/mês</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="hero__image">
+                <img src="./dist/images/cognitinho.png" alt="Cognitinho">
+            </div> <!-- Adicionando a classe hero__image aqui -->
+        </div>
+    </section>
+
+    <section class="menu">
+        <div class="menu__planos">
+            <h2 class="menu__title">Conheça nossos planos</h2>
+            <div class="menu__tabs"> <button class="menu__tab" data-tab="basic">Básico</button> <button
+                    class="menu__tab" data-tab="premium">Premium</button> <button class="menu__tab"
+                    data-tab="vip">VIP</button> </div>
+            <div class="menu__content" data-content="basic">Conteúdo do Plano Básico</div>
+            <div class="menu__content" data-content="premium">Conteúdo do Plano Premium</div>
+            <div class="menu__content" data-content="vip">Conteúdo do Plano VIP</div>
+        </div>
+    </section>
+
+    <script src="./src/main.js"></script>
+</body>
+
+</html>
