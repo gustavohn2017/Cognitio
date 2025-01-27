@@ -1,9 +1,11 @@
 @use 'variables' as vars;
 @use 'header';
 @use 'hero';
-@use 'menu';
+@use 'tab-menu';
+@use 'fale-conosco';
 @use 'mixins' as mixins;
-
+@use 'footer';
+@use 'media-queries';
 
 * {
     font-family: "Karla", sans-serif;

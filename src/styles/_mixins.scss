@@ -36,21 +36,20 @@
 }
 
 @mixin button() {
-    display: flex; // Usando Flexbox
-    justify-content: center; // Centralizando horizontalmente
-    align-items: center; // Centralizando verticalmente
+    display: flex;
+    justify-content: center; 
+    align-items: center;
     width: 100%;
     height: 60px;
     padding: 10px;
     font-size: 18px;
-    color: vars.$corFonteSecundaria; // Cor do texto dos botões
+    color: vars.$corFonteSecundaria;
     text-decoration: none;
-    background-color: vars.$corDeFundoBotaoPrimario; // Cor de fundo dos botões
-    text-transform: uppercase;
+    background-color: vars.$corDeFundoBotaoPrimario;
     border-radius: 4px;
     margin-bottom: 8px;
     letter-spacing: 1px;
-    border: none; // Removendo borda padrão dos botões
+    border: none;
     border-radius: 10px;
 
 }

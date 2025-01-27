@@ -1,0 +1,61 @@
+@use 'variables' as vars;
+@use 'mixins' as mixins;
+
+.tab-menu {
+    padding: 20px;
+
+    &__tabs {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    &__tab {
+        margin: 0 10px;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        border-left: 2px solid vars.$corSecundaria;
+        border-top: 2px solid vars.$corSecundaria;
+
+        &--active {
+            background-color: vars.$corSecundaria;
+            color: #fff;
+        }
+
+        &:hover:not(.tab-menu__tab--active) {
+            background-color: vars.$corPrincipal;
+        }
+
+        &:hover {
+            background-color: vars.$corPrincipal;
+            color: vars.$corFontePrincipal;
+        }
+    }
+
+    &__content-box {
+        text-align: center;
+        background-color: vars.$corPrincipal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        border-radius: 25px;
+        margin: 20px 10px;
+        padding: 20px;
+
+        h2 {
+            margin-bottom: 1%;
+        }
+    }
+
+    &__content {
+        display: none;
+        font-size: 18px;
+
+        &--active {
+            display: block;
+        }
+    }
+}

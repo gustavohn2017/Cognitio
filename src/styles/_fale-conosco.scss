@@ -1,0 +1,74 @@
+@use 'mixins' as mixins;
+@use 'variables' as vars;
+@use 'sass:color';
+
+.fale-conosco {
+    display: flex;
+    justify-content: flex-start; // Alinha o card à esquerda
+    padding: 20px;
+    padding-left: 2%;
+
+    &__card {
+        background-color: vars.$corPrincipal;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px 0;
+        max-width: 400px; // Limita a largura do card
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Adiciona uma sombra sutil
+    }
+
+    &__title {
+        @include mixins.title();
+    }
+
+    &__description {
+        margin-bottom: 20px;
+        @include mixins.text();
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; // Aumenta o espaçamento entre os campos
+    }
+
+    &__form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
+        margin-bottom: 5px;
+        @include mixins.text-small();
+    }
+
+    &__input,
+    &__textarea {
+        padding: 12px;
+        border-radius: 5px;
+        border: 1px solid vars.$corSecundaria;
+        font-size: 14px;
+        background-color: #fff;
+        color: #333;
+    }
+
+    &__textarea {
+        resize: vertical;
+        min-height: 100px;
+    }
+
+    &__button {
+        margin-top: 15px;
+        padding: 12px;
+        background-color: vars.$corSecundaria;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: color.adjust(vars.$corSecundaria, $lightness: -10%);
+        }
+    }
+}

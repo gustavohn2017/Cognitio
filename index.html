@@ -34,37 +34,174 @@
         <div class="hero__content">
             <h1 class="hero__content__branding"></h1>
             <h3 class="title--small">
-                <p>Desenvolva suas habilidades e alcance seus objetivos!</p>
+                <p>Desenvolva habilidades, alcance objetivos!</p>
             </h3>
-            <p>
-                <a href="#" class="link-text">Saiba mais</a>
-                <br>
-                <span class="text">
-                    <a href="#" class="link-text">Clique aqui para acessar o conteúdo</a>
-                </span>
-            </p>
+            
             <ul class="hero__content__combos">
+                <li class="hero__content__combos__combo">
+                    <button class="button">Veja nossos planos!</button>
+                </li>
                 <li class="hero__content__combos__combo">
                     <button class="button">Agende uma consulta!</button>
                 </li>
+            </ul>
         </div>
         <div class="hero__image">
             <img src="./dist/images/cognitinho.png" alt="Cognitinho">
         </div>
     </section>
-    
-
-    <section class="menu">
-        <div class="menu__planos">
-            <h2 class="menu__title">Conheça nossos planos</h2>
-            <div class="menu__tabs"> <button class="menu__tab" data-tab="basic">Básico</button> <button
-                    class="menu__tab" data-tab="premium">Premium</button> <button class="menu__tab"
-                    data-tab="vip">VIP</button> </div>
-            <div class="menu__content" data-content="basic">Conteúdo do Plano Básico</div>
-            <div class="menu__content" data-content="premium">Conteúdo do Plano Premium</div>
-            <div class="menu__content" data-content="vip">Conteúdo do Plano VIP</div>
+    <section class="tab-menu">
+        <div class="container">
+            <div class="tab-menu__tabs">
+                <div class="tab-menu__tab tab-menu__tab--active">Autismo</div>
+                <div class="tab-menu__tab">TDAH</div>
+                <div class="tab-menu__tab">Dislexia</div>
+                <div class="tab-menu__tab">Síndrome de Down</div>
+                <div class="tab-menu__tab">Discalculia</div>
+            </div>
+            <div class="tab-menu__content-box">
+                <div class="tab-menu__content tab-menu__content--active">
+                    <h2>Autismo</h2>
+                    <p>
+                        O autismo é uma condição do neurodesenvolvimento que afeta a comunicação, o comportamento e a interação social. Pode ser tratado com terapias comportamentais, fonoaudiologia e suporte educacional.
+                    </p>
+                </div>
+                <div class="tab-menu__content">
+                    <h2>TDAH</h2>
+                    <p>
+                        O Transtorno de Déficit de Atenção e Hiperatividade (TDAH) é uma condição caracterizada por desatenção, hiperatividade e impulsividade. O tratamento pode incluir medicação, terapia comportamental e suporte educacional.
+                    </p>
+                </div>
+                <div class="tab-menu__content">
+                    <h2>Dislexia</h2>
+                    <p>
+                        A dislexia é uma dificuldade específica de aprendizagem que afeta a leitura e a escrita. Pode ser tratada com intervenções educacionais específicas e apoio psicopedagógico.
+                    </p>
+                </div>
+                <div class="tab-menu__content">
+                    <h2>Síndrome de Down</h2>
+                    <p>
+                        A Síndrome de Down é uma condição genética que causa deficiência intelectual e pode estar associada a características físicas e problemas de saúde. O tratamento inclui intervenções precoces, suporte educacional e acompanhamento médico.
+                    </p>
+                </div>
+                <div class="tab-menu__content">
+                    <h2>Discalculia</h2>
+                    <p>
+                        A discalculia é uma dificuldade específica de aprendizagem que afeta a habilidade de compreender e trabalhar com números. Pode ser tratada com intervenções educacionais específicas e apoio psicopedagógico.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
+
+    <section class="fale-conosco">
+        <div class="fale-conosco__container">
+            <div class="fale-conosco__card">
+                <h2 class="fale-conosco__title">Fale Conosco</h2>
+                <p class="fale-conosco__description">Entre em contato conosco para mais informações ou para agendar uma consulta.</p>
+                <form action="#" method="post" class="fale-conosco__form">
+                    <div class="fale-conosco__form-group">
+                        <label for="nome" class="fale-conosco__label">Nome:</label>
+                        <input type="text" id="nome" name="nome" class="fale-conosco__input" required>
+                    </div>
+                    <div class="fale-conosco__form-group">
+                        <label for="email" class="fale-conosco__label">E-mail:</label>
+                        <input type="email" id="email" name="email" class="fale-conosco__input" required>
+                    </div>
+                    <div class="fale-conosco__form-group">
+                        <label for="telefone" class="fale-conosco__label">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" class="fale-conosco__input" required>
+                    </div>
+                    <div class="fale-conosco__form-group">
+                        <label for="mensagem" class="fale-conosco__label">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" class="fale-conosco__textarea" required></textarea>
+                    </div>
+                    <button type="submit" class="fale-conosco__button">Enviar</button>
+                </form>
+            </div>
+    
+            <div class="fale-conosco__tab-menu">
+                <div class="tab-menu__tabs">
+                    <div class="tab-menu__tab tab-menu__tab--active">Crianças</div>
+                    <div class="tab-menu__tab">Adolescentes</div>
+                    <div class="tab-menu__tab">Intervenção Precoce</div>
+                    <div class="tab-menu__tab">Orientação Parental</div>
+                </div>
+                <div class="tab-menu__content-box">
+                    <div class="tab-menu__content tab-menu__content--active">
+                        <h2>Planos para Crianças</h2>
+                        <p>
+                            Oferecemos planos personalizados para crianças, focados em desenvolvimento cognitivo, habilidades sociais e suporte educacional.
+                        </p>
+                        <ul>
+                            <li>Plano Básico: Acompanhamento semanal.</li>
+                            <li>Plano Avançado: Acompanhamento duas vezes por semana.</li>
+                            <li>Plano Premium: Acompanhamento diário com suporte intensivo.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-menu__content">
+                        <h2>Planos para Adolescentes</h2>
+                        <p>
+                            Nossos planos para adolescentes incluem suporte para habilidades acadêmicas, orientação vocacional e desenvolvimento emocional.
+                        </p>
+                        <ul>
+                            <li>Plano Acadêmico: Foco no desempenho escolar.</li>
+                            <li>Plano Vocacional: Orientação para escolha de carreira.</li>
+                            <li>Plano Emocional: Acompanhamento psicológico e emocional.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-menu__content">
+                        <h2>Planos de Intervenção Precoce</h2>
+                        <p>
+                            A intervenção precoce é crucial para o desenvolvimento infantil. Nossos planos são desenhados para detectar e tratar problemas de desenvolvimento o mais cedo possível.
+                        </p>
+                        <ul>
+                            <li>Plano Diagnóstico: Avaliação e diagnóstico inicial.</li>
+                            <li>Plano Terapêutico: Sessões de terapia focadas em necessidades específicas.</li>
+                            <li>Plano Integrado: Programa completo de intervenção precoce com acompanhamento contínuo.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-menu__content">
+                        <h2>Planos de Orientação Parental</h2>
+                        <p>
+                            Oferecemos suporte para pais, ajudando-os a compreender e apoiar o desenvolvimento de seus filhos.
+                        </p>
+                        <ul>
+                            <li>Plano de Suporte Básico: Sessões mensais com orientações.</li>
+                            <li>Plano de Suporte Completo: Sessões semanais com feedback detalhado.</li>
+                            <li>Plano Intensivo: Acompanhamento contínuo e suporte 24/7.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__info">
+                <p class="footer__text">© 2025 Sua Empresa. Todos os direitos reservados.</p>
+                <p class="footer__text">Endereço: Rua Exemplo, 123 - Cidade, Estado</p>
+                <p class="footer__text">Telefone: (11) 1234-5678</p>
+            </div>
+            <div class="footer__social">
+                <a href="#" class="footer__social-link">Facebook</a>
+                <a href="#" class="footer__social-link">Twitter</a>
+                <a href="#" class="footer__social-link">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    
+
+
+    
+    
+
 
     <script src="./src/main.js"></script>
 </body>

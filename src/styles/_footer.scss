@@ -1,0 +1,40 @@
+@use 'variables' as vars;
+@use 'sass:color';
+
+.footer {
+    background-color: vars.$corPrincipal;
+    padding: 20px;
+    color: #000000;
+    text-align: center;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__info {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    &__social {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__social-link {
+        color: #000000;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s;
+
+        &:hover {
+            color: color.adjust(vars.$corSecundaria, $lightness: -20%);
+        }
+    }
+}
