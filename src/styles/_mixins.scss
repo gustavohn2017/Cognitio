@@ -4,33 +4,33 @@
 @mixin text($fontsize: 16px) {
     font-size: $fontsize;
     line-height: $fontsize + 10px;
-    color: vars.$corFontePrincipal; // Utilizando a cor principal do texto
+    color: vars.$corFontePrincipal;
 }
 
 @mixin text-small() {
-    @include text(12px); // Inclui o mixin text para texto pequeno com font-size de 12px
+    @include text(12px); 
 }
 
 @mixin text-big() {
-    @include text(44px); // Inclui o mixin text para texto grande com font-size de 44px
+    @include text(44px);
 }
 
 @mixin title($fontsize: 40px) {
-    @include text($fontsize); // Inclui o mixin text para títulos
+    @include text($fontsize);
     margin-bottom: 64px;
 }
 
 @mixin title-small() {
-    @include title(32px); // Inclui o mixin title para título pequeno com font-size de 32px
+    @include title(32px);
 }
 
 @mixin title-big() {
-    @include title(48px); // Inclui o mixin title para título grande com font-size de 48px
+    @include title(48px); 
 }
 
 @mixin link() {
-    @include text(18px); // Inclui o mixin text para links com font-size de 18px
-    color: vars.$corSecundaria; // Utilizando a cor secundária do texto
+    @include text(18px); 
+    color: vars.$corSecundaria; 
     align-items: center;
     text-decoration: underline;
 }
