@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "gulp build --gulpfile gulpfile.mjs",
+    "build": "gulp build --gulpfile gulpfile.mjs --output public",
     "start": "gulp --gulpfile gulpfile.mjs",
     "dev": "gulp watch --gulpfile gulpfile.mjs"
   },
